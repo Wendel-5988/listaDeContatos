@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="main.js" defer></script>
+  <title>Lista de Contatos</title>
+</head>
+<body>
+  <header class="container">
+    <span>&#9990;</span>
+    <h1>Lista de Contatos</h1>
+  </header>
+  <section class="container">
+    <div id="formulario">
+      <h2>Criar novo contato</h2>
+      <form>
+        <input type="text" id="nomeInput" placeholder="Nome:" required>
+        <input type="tel" id="numeroInput" placeholder="Número:" required>
+        <button type="submit" id="btn">ADICIONAR <span>&plus;</span></button>
+      </form>
+    </div>
+    <div id="contatos">
+      <h2>Lista de contatos</h2>
+      <table cellspacing="0" id="tabela">
+        <thead>
+          <tr>
+            <th>Nome do contato</th>
+            <th>Número de telefone</th>
+            <th>Ligar</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><b>Contatos salvos:</b></td>
+            <td id="contatos-salvos">0</td>
+            <th>- -</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+  <footer class="container">
+    <span>&copy;</span>
+    <p>Lista de Contatos - Todos os direitos reservados - 2024</p>
+  </footer>
+</body>
+</html>
